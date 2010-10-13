@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<body>
+		<div style="text-align:center;">
+			<div id="container" style="text-align:left;">
+				<div id="header">
+					<div class="top">
+						<div id="subtitle">
+							Winchester's Online News Source
+							<div class="url"><a href="http://www.winchesterstar.com/" title="">www.winchesterstar.com</a></div>
+						</div>
+						<div id="weather">
+							<h5 class="reset_style">Today's Weather</h5>
+							<a href="http://www.wunderground.com/US/VA/Winchester.html?bannertypeclick=miniWeather2"><img src="http://banners.wunderground.com/weathersticker/miniWeather2_cond/language/www/US/VA/Winchester.gif" border=0 alt="Click for Winchester, Virginia Forecast" height=50 width=150></a>
+						</div>
+					</div>
+					<div id="header_bar">
+						<div class="year2">115th YEAR</div>
+						<div class="date">Wednesday, September 29, 2010</div>
+						<div class="addr">Winchester, Virginia 22601</div>
+					</div>
+				</div>
+
+				<div align="center" style="padding-bottom:5px;">
+				<a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=264__zoneid=40__cb=c4340108af__maxdest=http://danryanbuilders.com' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=leader-50000-big.gif&contenttype=gif' width='728' height='90' alt='' title='' border='0' /></a><div id='beacon_264' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=264&amp;campaignid=301&amp;zoneid=40&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=c4340108af' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div>				</div>
+
+				<ul id="menu" class="reset_menu" style="text-align:left;">
+					<li class="contact reset_style"><a href="" title="" onClick="return clickreturnvalue();" onMouseover="dropdownmenu(this, event, menu1, '200px');" onMouseout="delayhidemenu();">Contact The Star</a></li>
+					<li class="print reset_style"><a href="http://winchesterstar.va.newsmemory.com/marketplace.php" target="_blank" title="" >Today's Print Ads</a></li>
+					<li class="classfieds reset_style"><a href="/#" title="" onClick="return clickreturnvalue();" onMouseover="dropdownmenu(this, event, menu3, '200px');" onMouseout="delayhidemenu();">Classifieds</a></li>
+					<li class="death reset_style"><a href="/pages/view/www_data_box/data_box.html" title="" onMouseover="dropdownmenu(this, event, menu8, '200px');" onMouseout="delayhidemenu();">Database</a></li>
+					<li class="links reset_style"><a href="/#" title="" onClick="return clickreturnvalue();" onMouseover="dropdownmenu(this, event, menu5, '200px');" onMouseout="delayhidemenu();">Links</a></li>
+					<li class="community reset_style"><a href="/pages/view/Community/community.html" title="">Community</a></li>
+					<li class="subscribe reset_style"><a href="https://classadz.vdata.com/WinchesterCirc/" title="">Subscribe/Manage</a></li>
+				</ul>
+				<div id="main">
+					<div id="content">
+						<div id="archive" class="site_link" style="text-align:left;">
+							<a href="#" class="b" title="">View:</a> &nbsp;
+																							<a href="/pages/set_edition/1285691165">09/28</a> &nbsp;|&nbsp;
+																							<a href="/pages/set_edition/1285604765">09/27</a> &nbsp;|&nbsp;
+							
+							<a href="/pages/choose_edition" class="" title="">Archives</a> &nbsp;|&nbsp;
+							<a href="/pages/set_edition/1285777565" class="b">Today&#039;s Homepage</a>							<span style="padding-left: 20px;">
+															<form style="display:inline;" id="MemberAddForm" method="post" action="/members/login"><fieldset style="display:none;"><input type="hidden" name="_method" value="POST" /></fieldset>Email <input name="data[Member][email]" type="text" style="width:100px;" value="" id="MemberEmail" /> &nbsp;Password <input type="password" name="data[Member][password]" style="width:75px;" value="" id="MemberPassword" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/members/login" style="color:#D03317;font-size:0.9em">New Subscriber?</a>								<div style="padding:0px 0px 0px 325px;margin:3px 0px 2px 0px;"><a href="/members/forgot" style="color:#D03317;font-size:0.9em">Forgot your password?</a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="hidden" name="data[Member][remember]" id="MemberRemember_" value="0" /><input type="checkbox" name="data[Member][remember]" style="" value="1" id="MemberRemember" />Remember Me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">Login</button></div></form>
+														</span>
+
+						</div>
+						<style>
+							#facebook-icon{
+								position:relative;
+								left:740px;
+								top:-38px;
+								height:24px;
+								width:24px;
+							}
+						</style>
+						<span id="facebook-icon">
+							<a href="http://www.facebook.com/pages/Winchester-VA/The-Winchester-Star/195641831897"><img src="/img/default/facebook.png" width="24" alt="" /></a>
+						</span>
+						<div style="clear:both;"></div>
+
+						<div id="content_side">
+							<div id="eEdition" class="section">
+								<div align="center">
+
+																			<A HREF="/members/login/null/true">
+																			<IMG SRC="http://winchesterstar.va.newsmemory.com/newsmemvol2/virginia/winchesterstar/prima/prima.jpg" WIDTH="150px" BORDER=0>
+
+									</A>
+
+									<h4>The Star's <span style="color:#FF0000;"><blink>New</blink></span> e-Edition</h4>
+									<select name="eEdition" id="eEdition" onchange="site_swap(this.options[this.selectedIndex].value)">
+										<option value="#">Select an Option</option>
+										<option value="/pages/view/Special_Pages/why_subscribe.html">Why Subscribe?</option>
+										<option value="http://winchesterstar.va.newsmemory.com/demo.php"><span style="color:#ff0000; font-size:14px; font-weight:bold; text-decoration:underline;">Sample e-Edition</option>
+										<option value="https://classadz.vdata.com/winchestercirc">Subscribe for e-Edition</option>
+																					<option value="/members/login/null/true">Login to e-Edition</option>
+																			</select>
+									<br />
+																			<A HREF="/members/login/null/true">
+																			View Winchester Star as <br>an E-Book
+									</A>
+								</div>
+								<br>
+								<a href="http://www.newslibrary.com/sites/vwsb/" targetr="_blank"><img src="/img/default/archive-button.jpg"  height="65" /></a>
+
+							</div>
+
+							<div>
+							<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/3836677.js"></script>
+<noscript>
+	<a href="http://polldaddy.com/poll/3836677/">Winchester City Council is re-examining the tax-exempt status of Winchester Medical Center. Should:</a><span style="font-size:9px;"><a href="http://polldaddy.com/features-surveys/">survey software</a></span>
+</noscript><br />							</div>
+
+							<script type="text/javascript" src="http://img.video.ap.org/p/j/apovn.js"></script>
+							<div id="apVideo" class="section">
+								<img src="/img/default/apvideo.gif" alt="" />								<div id="flashcontent">
+									<script type="text/javascript">
+										var ap = new SWFObject("http://img.video.ap.org/p/s/sm_vrt_3thumb_scroll.swf", "sm_vrt_3thumb_scroll", "180", "175", "7");
+										ap.addParam("quality",				"best");
+										ap.addParam("bgcolor",				"#FFFFFF");
+										ap.addParam("AllowScriptAccess",	"always");
+										ap.addVariable("cat",				"Breaking");
+										ap.addVariable("pid",				"VAWIN");
+										ap.addVariable("fontcolor",			"0x336699");
+										ap.write("flashcontent");
+									</script>
+								</div>
+							</div>
+							<div class="site_link">
+
+								<div id="eventsCalendar">
+																		<div class="calendar"><div class='monthLabel'>September 2010</div>
+<table class='month'><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr class='week'>
+<td class='day Blank'><a href="/events/index/date:2010-08-29">29</a></td>
+<td class='day Blank'><a href="/events/index/date:2010-08-30">30</a></td>
+<td class='day Blank'><a href="/events/index/date:2010-08-31">31</a></td>
+<td class='day Wed'><a href="/events/index/date:2010-09-01">1</a></td>
+<td class='day Thu'><a href="/events/index/date:2010-09-02">2</a></td>
+<td class='day Fri'><a href="/events/index/date:2010-09-03">3</a></td>
+<td class='day Sat'><a href="/events/index/date:2010-09-04">4</a></td>
+</tr><tr class='week'>
+<td class='day Sun'><a href="/events/index/date:2010-09-05">5</a></td>
+<td class='day Mon'><a href="/events/index/date:2010-09-06">6</a></td>
+<td class='day Tue'><a href="/events/index/date:2010-09-07">7</a></td>
+<td class='day Wed'><a href="/events/index/date:2010-09-08">8</a></td>
+<td class='day Thu'><a href="/events/index/date:2010-09-09">9</a></td>
+<td class='day Fri'><a href="/events/index/date:2010-09-10">10</a></td>
+<td class='day Sat'><a href="/events/index/date:2010-09-11">11</a></td>
+</tr><tr class='week'>
+<td class='day Sun'><a href="/events/index/date:2010-09-12">12</a></td>
+<td class='day Mon'><a href="/events/index/date:2010-09-13">13</a></td>
+<td class='day Tue'><a href="/events/index/date:2010-09-14">14</a></td>
+<td class='day Wed'><a href="/events/index/date:2010-09-15">15</a></td>
+<td class='day Thu'><a href="/events/index/date:2010-09-16">16</a></td>
+<td class='day Fri'><a href="/events/index/date:2010-09-17">17</a></td>
+<td class='day Sat'><a href="/events/index/date:2010-09-18">18</a></td>
+</tr><tr class='week'>
+<td class='day Sun'><a href="/events/index/date:2010-09-19">19</a></td>
+<td class='day Mon'><a href="/events/index/date:2010-09-20">20</a></td>
+<td class='day Tue'><a href="/events/index/date:2010-09-21">21</a></td>
+<td class='day Wed'><a href="/events/index/date:2010-09-22">22</a></td>
+<td class='day Thu'><a href="/events/index/date:2010-09-23">23</a></td>
+<td class='day Fri'><a href="/events/index/date:2010-09-24">24</a></td>
+<td class='day Sat'><a href="/events/index/date:2010-09-25">25</a></td>
+</tr><tr class='week'>
+<td class='day Sun'><a href="/events/index/date:2010-09-26">26</a></td>
+<td class='day Mon'><a href="/events/index/date:2010-09-27">27</a></td>
+<td class='day Tue'><a href="/events/index/date:2010-09-28">28</a></td>
+<td class='day Wed today selected'><a href="/events/index/">29</a></td>
+<td class='day Thu'><a href="/events/index/date:2010-09-30">30</a></td>
+<td class='day Blank'><a href="/events/index/date:2010-10-01">1</a></td>
+<td class='day Blank'><a href="/events/index/date:2010-10-02">2</a></td>
+</tr></table></div>
+									<h3>Upcoming Events</h3>
+																			<div class="eventC">
+											<div class="date">10/1</div>
+											<div class="name"><a href="/events/view/3587">MS Winchester Self Help Group Meeting</a></div>
+											<div class="clear"></div>
+										</div>
+																			<div class="eventC">
+											<div class="date">10/3</div>
+											<div class="name"><a href="/events/view/3835">Bringing Native Plants and Wildlife into the Managed Landscape</a></div>
+											<div class="clear"></div>
+										</div>
+																			<div class="eventC">
+											<div class="date">10/4</div>
+											<div class="name"><a href="/events/view/3908">Museum Gallery Docent Training</a></div>
+											<div class="clear"></div>
+										</div>
+																			<div class="eventC">
+											<div class="date">10/5</div>
+											<div class="name"><a href="/events/view/3622">Free Meditation Sessions</a></div>
+											<div class="clear"></div>
+										</div>
+																			<div class="eventC">
+											<div class="date">10/5</div>
+											<div class="name"><a href="/events/view/3909">Tuesday Garden Talk: Autumn’s Companions</a></div>
+											<div class="clear"></div>
+										</div>
+																	</div>
+
+								<div style="font-size:0.85em;">Have an event? <a href="/events/add">Click Here!</a></div>
+
+							</div>
+							<br /><br /><br />
+							<div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=56__zoneid=5__cb=b40c9491c0__maxdest=http://www.u1stfinancial.net/doughyatt' target='_blank' onmouseover="self.status='U First'; return true;" onmouseout="self.status=''; return true;"><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=u_first_3.jpg&contenttype=jpeg' width='125' height='125' alt='U First' title='U First' border='0' /></a><div id='beacon_56' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=56&amp;campaignid=103&amp;zoneid=5&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=b40c9491c0' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div><div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=4__zoneid=5__cb=cb9dcbe54d__maxdest=http://www.511virginia.org/' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=511.gif&contenttype=gif' width='90' height='61' alt='' title='' border='0' /></a><div id='beacon_4' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=4&amp;campaignid=11&amp;zoneid=5&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=cb9dcbe54d' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div><div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=199__zoneid=5__cb=c34d0c6f06__maxdest=http://www.winchesterstar.com/pages/free_classifieds' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=free_3.gif&contenttype=gif' width='120' height='120' alt='' title='' border='0' /></a><div id='beacon_199' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=199&amp;campaignid=238&amp;zoneid=5&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=c34d0c6f06' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div><div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=185__zoneid=5__cb=52c6d0ae5c__maxdest=http://www.winchesterstar.com/classifieds/categories' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=button-adv_2.gif&contenttype=gif' width='144' height='180' alt='' title='' border='0' /></a><div id='beacon_185' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=185&amp;campaignid=226&amp;zoneid=5&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=52c6d0ae5c' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div><div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=126__zoneid=5__cb=17811b9f55__maxdest=http://www.winchesterstar.com/pages/coupons' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=ssn125x125a_1_.gif&contenttype=gif' width='125' height='125' alt='' title='' border='0' /></a><div id='beacon_126' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=126&amp;campaignid=171&amp;zoneid=5&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=17811b9f55' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div>						</div><!-- End #content_side -->
+
+						<div id="content_main">
+									                                       <script type="text/javascript" src="/js/jquery/jquery-1.4.2.min.js"></script><script type="text/javascript">
+	jQuery.noConflict();
+</script>
+<link rel="stylesheet" type="text/css" href="/css/colorbox/5/colorbox.css" /><script type="text/javascript" src="/js/colorbox/jquery.colorbox-min.js"></script><script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery(".popup").colorbox({opacity:0.50, scrolling:false}, function(){});
+	});
+</script>
+    <style>
+        .article-image{
+            width:305px;
+            margin: 0px 0px 15px 15px;
+            text-align:left;
+        }
+        .article-image-caption{
+            font-style:italic;
+            font-size:12px;
+            font-family:arial;
+            text-align:left;
+        }
+        #ArticleDetails td h2{
+            font-size:28px;
+            margin:5px 0px 10px 0px;
+        }
+        #ArticleDetails td h3{
+            font-size:18px;
+            font-weight:normal;
+            margin:5px 0px 15px 0px;
+            color:#2A2A2A;
+        }
+        #ArticleDetails img{
+            border: 1px solid #ababab;
+        }
+        #ArticleImages {
+            float:right;
+            width:322px;
+        }
+    </style>
+    <table border="0" cellpadding="2" cellspacing="2" width="100%" id="ArticleDetails">
+        <tr>
+        <td valign="top">
+            <h2>Frederick household incomes shrinking</h2>
+                            <h3>County's poverty rate doubles to 13% in '09</h3>
+                        <hr />
+            <div style="float:left;width:50%;">
+            September 29, 2010<br />
+                            <div><em>By Danielle Nadler</em></div>
+                                        <div>The Winchester Star</div>
+                        </div>
+            <div style="float:left;width:50%;text-align:right;">
+                &nbsp;
+                <a href="/articles/printable/368702" target="_blank"><img src="/img/icons/printer.png" style="border:none;" title="Print" alt="" /></a>                &nbsp;
+                <a href="/articles/email_a_friend/368702" id="EmailFriend" class="popup"><img src="/img/icons/email.png" style="border:none;" title="Email Friend" alt="" /></a>                &nbsp;
+            </div>
+            <div style="clear:both;"></div>
+            <hr />
+
+            
+            County's poverty rate doubles to 13% in '09<p><strong>WINCHESTER</strong>- Household incomes dropped while poverty rates doubled during recent years in Frederick County, according to a survey released Tuesday by the U.S. Census Bureau.</p><p>The teeter-totter effect of the area's recession reflects data collected as part of the annual American Community Survey in 2009.</p><p>The survey did not include figures for Winchester or Clarke County because it collected information only from cities and counties with at least 65,000 residents.</p><p>In Frederick County (with an estimated population of 73,898 in July 2008), the number of people living in poverty doubled - from 6.5 percent to 13 percent - from 2007 to 2009.</p><p>Over the same period, the county's median household income fell from $66,114 to $61,806.</p><p>Virginia is one of 31 states recording increases in the percentage of people living in poverty in 2009 compared to the previous year, as it rose from 10.3 percent to 10.5 percent of the population.</p><p>Poverty status is determined by comparing annual income to a set of dollar values that vary by family size, number of children, and the age of the householder.</p><p>The newly released figures are no shock to nonprofit organizations that help the area's poorest families.</p><p>On Monday, the Congregational-Community Action Project (C-CAP), which serves city and county residents from its headquarters on Kent Street, had 165 families seeking help.</p><p>That one-day count has become typical in recent months.</p><p>"When the recession first hit three years ago, we thought seeing 90 families in one day was a lot," said Fran Ricketts, C-CAP president and director.</p><p>"The demand has gotten so great, it's way out of control for us."</p><p>C-CAP is receiving federal money specifically to help Frederick County for the first time - the Federal Emergency Management Agency recently gave the organization a $46,000 grant to help pay for county residents' utility bills.</p><p>The Blue Ridge Area Food Bank, which oversees the Lord Fairfax Area Branch on Roberts Street, is also serving more clients than ever.</p><p>On average, 92,000 people receive emergency food assistance from the organization, which serves 25 counties and nine cities in central and western Virginia.</p><p>That figure is up 8 percent from a year ago, according to a press release from the organization.</p><p>"We are worried," said Larry Zippin, chief executive officer of the food bank, which was established 29 years ago. "Unemployment remains high and all signs point to little to no relief in the near future."</p><p>The American Community Survey provides data about the nation's socioeconomic, housing, and demographic characteristics.</p><p>The first set of 2010 Census data, including the nation's population and congressional apportionment figures for the states, will be released by the end of the year.</p><p>census.gov</p><p>- Contact Danielle Nadler at <em><a href="mailto:dnadler@winchesterstar.com">dnadler@winchesterstar.com</a></em> </p>
+        </td>
+        </tr>
+    </table>
+<div style="background:#CBE2F8;padding:2px;margin-bottom:10px;color:#1B538D;">
+	<div style="float:left;">
+		0 Comments for this Article. 
+	</div>
+	<div style="float:right">
+		<script type="text/javascript">
+		function show_commenting_box(){
+			$('commenting_box').show();
+			return false;
+		}
+		</script>
+		<a style="text-decoration: none;" href="#" onclick="return show_commenting_box();"><img alt="" src="/img/icons/comments_add.png"/> Leave Comment</a>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<div id="commenting_box" style="display:none;margin-bottom:10px;">
+	<div style="border:1px solid #CCC;padding:15px;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="width:50%;vertical-align:top;">
+			<h4 style="margin:0px 0px 10px 0px;">Commenting Login</h4>
+			<form id="CommentUserLoginForm" method="post" action="/comment_users/login"><fieldset style="display:none;"><input type="hidden" name="_method" value="POST" /></fieldset>		    <div class="input text required"><label for="CommentUserEmail">Email</label><input name="data[CommentUser][email]" type="text" maxlength="255" value="" id="CommentUserEmail" /></div>		    <div class="input password required"><label for="CommentUserPassword">Password</label><input type="password" name="data[CommentUser][password]" value="" id="CommentUserPassword" /></div>		    <input type="hidden" name="data[Location][edition]" value="" id="LocationEdition" />		    <input type="hidden" name="data[Location][page]" value="" id="LocationPage" />			<input type="hidden" name="data[Location][article_id]" value="368702" id="LocationArticleId" />		    <p style="font-size:10px;">
+			Would you like to associate your comment account with your subscription account?
+			<input type="hidden" name="data[CommentUser][accounts]" id="CommentUserAccounts_" value="" />
+			<input type="radio" name="data[CommentUser][accounts]" id="CommentUserAccounts1" value="1"  />Yes &nbsp;&nbsp;&nbsp;
+			<input type="radio" name="data[CommentUser][accounts]" id="CommentUserAccounts0" value="0"  />No</p>
+		  	<br />
+		    <div class="submit"><input type="submit" value="Login" /></div></form>		    <a href="/comment_users/forgot">Forgot your password?</a>		    </td>
+		    <td style="width:50%;vertical-align:top">
+		    	<p style="font-size:10px;">Want to comment on this article? If you've already created an account, login below and post your comments!</p>
+									<p style="font-size:10px;">[Haven't created an account yet?  <a href="/comment_users/add/article/368702">Click here to sign up for a FREE account!]</a></p>
+						    	<p style="font-size:10px;">By using this site you agree to abide by the <a target="_blank" href="/Special_Pages/guidelines.html">Posting Rule Guidelines</a> as well as the <a target="_blank" href="/Special_Pages/Terms.html">Terms & Conditions</a> posted here.</p>
+		    </td>
+	    </tr>
+    </table>
+</div></div>
+							<div class="clear"></div>
+							<div id="bar" align="center" class="site_link"><a href="/feeds/atom/" title="">RSS</a> <a href="/feeds/atom/" title=""><img src="/img/assets/new_images/rss.gif" alt="RSS" /></a></div>
+							<table width="548" border="0" align="center" cellpadding="10" cellspacing="10">
+								<tr>
+									<td><a href="http://www.uexpress.com/dearabby/" target="_blank"><img src="/img/assets/new_images/new_abby_logo02.jpg" height="65" border="0" /></a></td>
+									<td>
+										<a href="http://www.heloise.com/" target="_blank"><img src="/img/assets/new_images/heloisehints.jpg"  height="65" /></a>
+									</td>
+									<td><a href="http://games.yahoo.com/" target="_blank"><img src="/img/assets/new_images/gamesonline.jpg"  height="65" /></a></td>
+									<td><a href="http://movies.yahoo.com/showtimes/showtimes.html?z=22601&r=sim" target="_blank"><img src="/img/assets/new_images/movielistings.jpg" height="65" /></a></td>
+									<td><a href="http://bigcharts.marketwatch.com/" target="_blank"><img src="/img/assets/new_images/stocksgraphic.jpg"  height="65" /></a></td>
+								</tr>
+							</table>
+
+															<div class='AdDiv'>
+								<br /><br />								</div>
+													</div><!-- End #content_main -->
+					</div><!-- End #content -->
+					<div id="sidebar">
+						<div id="buy_photos" class="section">
+							<img src="/img/default/photos.jpg" alt="" />							<p>Order Your Favorite Winchester Star Photos<br /><a href="http://www.printroom.com/pro/winchesterstar" target="_blank" title="">Click Here To Order</a></p>
+							<div class="clear"></div>
+						</div>
+						<div id="a">
+															<div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=236__zoneid=6__cb=a84f6e5bec__maxdest=http://www.winchesterstar.com/uploads/content/Special_Pages/Web_Coupons/Images/Coupons.pdf' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=maroon-coupon.gif&contenttype=gif' width='160' height='180' alt='' title='' border='0' /></a><div id='beacon_236' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=236&amp;campaignid=274&amp;zoneid=6&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=a84f6e5bec' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div><div class="AdDiv"><a href='http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=266__zoneid=6__cb=3b4660c4ac__maxdest=https://giveusyourfeedback.wufoo.com/forms/representative-frank-wolf/' target='_blank'><img src='http://www.winchesterstar.com/ads/www/delivery/ai.php?filename=wolf-wincester_star_sept_17.gif&contenttype=gif' width='160' height='180' alt='' title='' border='0' /></a><div id='beacon_266' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=266&amp;campaignid=303&amp;zoneid=6&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=3b4660c4ac' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div><div class="AdDiv"><IFRAME SRC="http://ad.doubleclick.net/adi/N5654.154388.WINCHESTERSTAR.COM/B4582973;sz=160x600;ord=[timestamp]?" WIDTH=160 HEIGHT=600 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/adj/N5654.154388.WINCHESTERSTAR.COM/B4582973;abr=!ie;sz=160x600;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<a href="http://www.winchesterstar.com/ads/www/delivery/ck.php?oaparams=2__bannerid=260__zoneid=35__cb=bc4faef1b6__maxdest=http://ad.doubleclick.net/jump/N5654.154388.WINCHESTERSTAR.COM/B4582973;abr=!ie4;abr=!ie5;sz=160x600;ord=[timestamp]?"  target="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/N5654.154388.WINCHESTERSTAR.COM/B4582973;abr=!ie4;abr=!ie5;sz=160x600;ord=[timestamp]?"" BORDER=0 WIDTH=160 HEIGHT=600 ALT="Click Here"></A>
+</NOSCRIPT>
+</IFRAME>"
+<div id='beacon_260' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://www.winchesterstar.com/ads/www/delivery/lg.php?bannerid=260&amp;campaignid=297&amp;zoneid=35&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;referer=http%3A%2F%2Fwww.winchesterstar.com%2Farticles%2Fview%2Ffrederick_household_incomes_shrinking&amp;cb=bc4faef1b6' width='0' height='0' alt='' style='width: 0px; height: 0px;' /></div></div>								<style>
+									#top5read{
+										width:160px;
+										margin:0px auto 20px auto;
+									}
+									#top5header{
+										border:1px solid #CBE2F8;
+										background: #CBE2F8;
+										font-size:14px;
+										font-weight:bold;
+										padding:5px;
+										text-align:center;
+									}
+									#top5body{
+										font-size:11px;
+										border:1px solid #ccc;
+									}
+									#top5body table{
+										margin:5px;
+									}
+									#top5body table tr td{
+										padding:5px 0px 5px 0px;
+									}
+									#top5body table .other_rows{
+										vertical-align:top;
+										border-top:1px dotted #ccc;
+									}
+									#top5body table .first-row {
+										vertical-align:top;
+									}
+								</style>
+								<div id="top5read">
+									<div id="top5header">
+										Daily Top 5 Read
+									</div>
+									<div id="top5body">
+										<table>
+																																													<tr class="first-row">
+													<td>
+														#1&nbsp;
+													</td>
+													<td>
+														<a href="/articles/view/fatal_crash_near_gore">Fatal crash near Gore</a>													</td>
+												</tr>
+																																			<tr class="first-row">
+													<td>
+														#2&nbsp;
+													</td>
+													<td>
+														<a href="/articles/view/wmc_ruled_not_tax_exempt">WMC ruled not tax-exempt </a>													</td>
+												</tr>
+																																			<tr class="first-row">
+													<td>
+														#3&nbsp;
+													</td>
+													<td>
+														<a href="/articles/view/surprise_daddy_s_home">Surprise! Daddy&#039;s home!</a>													</td>
+												</tr>
+																																			<tr class="first-row">
+													<td>
+														#4&nbsp;
+													</td>
+													<td>
+														<a href="/articles/view/death_notices">Death notices</a>													</td>
+												</tr>
+																																			<tr class="first-row">
+													<td>
+														#5&nbsp;
+													</td>
+													<td>
+														<a href="/articles/view/trial_beginsin_murder_committed_8_years_ago">Trial beginsin murder  committed 8 years ago </a>													</td>
+												</tr>
+																																	</table>
+									</div>
+								</div>
+
+								<script type="text/javascript">
+								google_ad_client = "pub-4241396355463660";
+								google_ad_width = 120;
+								google_ad_height = 240;
+								google_ad_format = "120x240_as";
+								google_ad_type = "text_image";
+								google_ad_channel = "";
+								google_ui_features = "rc:0";
+								</script>
+								<div align="center">
+									<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+									</script>
+								</div>
+													</div>
+					</div><!-- End #sidebar -->
+					<div class="clear"></div>
+				</div><!-- End #main -->
+				<div id="footer">
+					<div class="links">
+						<a href="/pages/choose_edition" title="">Archives</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+						<a href="/uploads/content/Special_Pages/Terms.html" target="_blank">Terms of Use</a>					</div>
+					Copyright &copy; 2002-2010 by <strong>The Winchester Star</strong> - All Rights Reserved.
+				</div>
+			</div><!-- End #container -->
+		</div>
+			</body>
+</html>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-30587-48");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5857610-1");
+pageTracker._trackPageview();
+</script>

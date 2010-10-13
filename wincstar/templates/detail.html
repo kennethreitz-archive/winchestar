@@ -1,0 +1,13 @@
+<h1>{{ article.title }}</h1>
+
+{% if article.author %}
+    <em></em>By {{ article.author }}</em>
+{% endif %}
+
+<p>{{ article.published|date:_('N j, Y') }}</p>
+
+<div>
+    {% autoescape off %}
+        {{ article.content }}
+    {% endautoescape %}
+</div>
