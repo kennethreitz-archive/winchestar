@@ -8,6 +8,5 @@ class Article(object):
         self.subtitle = None
         self.published = None
         self.author = None
-        self.publisher= None
         self.content = None
         
