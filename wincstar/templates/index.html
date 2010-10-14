@@ -1,9 +1,22 @@
+<h1>Winchester News</h1>
+
 {% if articles %}
+    <h2>{{ today }}</h2>
     <ul>
-    {% for article in articles %}
-        <li><a href="/article/{{ article.id }}/">{{ article.title }}</a></li>
+    {% for date, arts in articles.iteritems %}
+
+        <h3>{{ date|date:_('N j, Y') }}</h3>
+        {% for article in arts %}
+            <li><a href="{{ article.get_absolute_url }}/">{{ article.title }}</a></li>
+        {% endfor%}
+        
+        
     {% endfor %}
     </ul>
 {% else %}
-     <p>No polls are available.</p>
+     <p>No articles are available.</p>
 {% endif %}
+
+<a href='/rss/'>RSS Feed</a>
+
+<p></p><em>All articles &copy; 2010 The Wincheser Star. Only for use by paid subscribers.</em></p>

@@ -1,5 +1,6 @@
 import os
 
+
 # Django settings for wincstar project.
 
 DEBUG = True

@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from ripper.views import LatestArticlesFeed
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -9,7 +10,9 @@ urlpatterns = patterns('',
     # (r'^wincstar/', include('wincstar.foo.urls')),
 #	(r'^wincstar/', include('wincstar.ripper.urls')),
 	(r'^/', 'ripper.views.index'),
-	(r'^article/(?P<article_id>\d+)/$', 'ripper.views.detail'),
+	(r'^article/(?P<article_slug>[a-zA-Z0-9_\-]+)/$', 'ripper.views.detail'),
+	(r'^rss/$', LatestArticlesFeed()),
+#	r'^latest/feed/$', LatestEntriesFeed()),
 #	(r'^polls/$', 'polls.views.index'),
 #    (r'^polls/(?P<poll_id>\d+)/$', 'polls.views.detail'),
 

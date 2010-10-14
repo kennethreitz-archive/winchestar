@@ -1,18 +1,54 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response, get_object_or_404
-from django.template import Context, loader
-from django.http import HttpResponse
+from django.contrib.syndication.views import Feed
+from collections import OrderedDict
 
 from ripper.models import Article
 
 
+class LatestArticlesFeed(Feed):
+	title = "Winchester Star Articles"
+	link = "http://salt.kennethreitz.com:8000/"
+	description = "Winchester Star aggregation. Do not use if you are not a paid subscriber."
 
+	def items(self):
+		return Article.objects.order_by('-published')[:20]
+
+	def item_title(self, item):
+		return item.title
+
+	def item_description(self, item):
+		_content = item.content
+		_content += '<hr />'
+		_content += '&copy; 2010 The Wincheser Star. Only for use by paid subscribers.'
+		return _content
+
+	def item_link(self, item):
+		return 'http://salt.kennethreitz.com:8000/article/%s/' % (item.slug)
+
+	def item_pubdate(self, item):
+		return item.published
+	
 def index(request):
-	latest_articles = Article.objects.all().order_by('-published')
-	return render_to_response('index.html', {'articles': latest_articles})
+	
+	articles = OrderedDict()
+	
+	for article in Article.objects.all().order_by('-published'):
+		if not article.published in articles:
+			articles[article.published] = []
+		articles[article.published].append(article)
+#
+#	print
+#	print
+#	print [(k, 0) for k in articles]
+#	print
+#	print
+	# print articles
+	
+	return render_to_response('index.html', {'articles': articles})
 
 
-def detail(request, article_id):
+def detail(request, article_slug):
 
-	art = get_object_or_404(Article, pk=article_id)	
+	art = get_object_or_404(Article, pk=article_slug)	
 	return render_to_response('detail.html', {'article': art})

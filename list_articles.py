@@ -1,17 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import cookielib
+import datetime
 import os
 import urllib2
-import cookielib
+
 
 from BeautifulSoup import BeautifulSoup
 from dateutil.parser import parse as dtime
 
 from django.core.management import setup_environ
+#from django.db.utils import IntegrityError
+
 from wincstar import settings
 
-os.environ['DJANGO_SETTINGS_MODULE'] ='wincstar.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'wincstar.settings'
 setup_environ(settings)
 
 from wincstar.ripper.models import Article as DjangoArticle
@@ -22,15 +26,15 @@ class Article(object):
 	"""An article."""
 
 	def __init__(self):
+		self.slug = None
 		self.title = None
 		self.subtitle = None
 		self.published = None
 		self.author = None
 		self.content = None
+		self.url = None
 
 	def to_django(self):
-
-
 
 		art = DjangoArticle()
 		art.title = self.title
@@ -38,32 +42,32 @@ class Article(object):
 		art.published = dtime(self.published)
 		art.author = self.author
 		art.content = self.content
+		art.ourl = self.url
+		art.slug = self.slug
 
 		
-		if len(self.content) > 300:
+		if len(self.content) > 1000:
 			art.save()
 		else:
 			print('%s had no usable content.' % (self.title if self.title else ''))
 
+#http://www.winchesterstar.com/pages/choose_edition/date:2010-10-03
 
 
-
-def get_article(url):
-	"""Fetches article."""
-
-	return urllib2.urlopen(url).read()
-
-
-def get_articles():
+def get_articles(url='http://www.winchesterstar.com/members/login'):
 	opener = urllib2.build_opener(
 			urllib2.HTTPCookieProcessor(cookielib.CookieJar()))
 	opener.addheaders.append(
 			('Content-Type', 'application/x-www-form-urlencoded'))
-	login_data = r'_method=POST&data%5BMember%5D%5Bemail%5D=thepythonist%40gmail.com&data%5BMember%5D%5Bpassword%5D=UXe1b&data%5BMember%5D%5Bremember%5D=0'
-	opener.open('http://www.winchesterstar.com/members/login',
-				login_data).read()
-	content = opener.open('http://www.winchesterstar.com/members/login',
-						  login_data).read()
+	login_data = (
+		r'_method=POST&data%5BMember%5D%5Bemail'
+		r'%5D=thepythonist%40gmail.com&data%5BMember'
+		r'%5D%5Bpassword%5D=UXe1b&data%5BMember%5D%5Bremember%5D=0'
+	)
+	opener.open('http://www.winchesterstar.com/members/login', login_data).read()
+
+	content = opener.open(url, login_data).read()
+
 	soup = BeautifulSoup(content)
 	links = []
 	for link in [str(l['href']) for l in soup.findAll('a') if
@@ -83,7 +87,9 @@ def parse_article(content):
 
 	article.title = art.find('h2').text
 	article.published = art.findNext('div').text.split('By')[0].split('2010')[0] + '2010' 
-	article.content = max(str(art).split('<hr />'), key=len).lstrip().split('</style>')[-1].lstrip()
+	_content = max(str(art).split('<hr />'), key=len).lstrip().split('</style>')[-1].lstrip()
+	article.content = BeautifulSoup(_content).prettify()
+
 
 	try:
 		article.subtitle = art.find('h3').text
@@ -98,12 +104,64 @@ def parse_article(content):
 	return article
 
 
+def date_range(year, month, day):
+	"""
+	Returns a generator of all the days between two date objects.
+
+	Results include the start and end dates.
+
+	Arguments can be either datetime.datetime or date type objects.
+
+	h3. Example usage
+
+		>>> import datetime
+		>>> import calculate
+		>>> dr = calculate.date_range(datetime.date(2009,1,1), datetime.date(2009,1,3))
+		>>> dr
+		<generator object="object" at="at">
+		>>> list(dr)
+		[datetime.date(2009, 1, 1), datetime.date(2009, 1, 2), datetime.date(2009, 1, 3)]
+
+	"""
+	# If a datetime object gets passed in,
+	# change it to a date so we can do comparisons.
+	
+	start_date = datetime.datetime(year, month, day)
+	end_date = datetime.datetime.now()
+	
+	if isinstance(start_date, datetime.datetime):
+		start_date = start_date.date()
+	if isinstance(end_date, datetime.datetime):
+		end_date = end_date.date()
+
+	# Verify that the start_date comes after the end_date.
+	if start_date > end_date:
+		raise ValueError('You provided a start_date that comes after the end_date.')
+
+	# Jump forward from the start_date...
+	while True:
+		yield start_date
+		# ... one day at a time ...
+		start_date = start_date + datetime.timedelta(days=1)
+		# ... until you reach the end date.
+		if start_date > end_date:
+			break
+
 if __name__ == '__main__':
-	for url in get_articles():
+
+	for date in date_range(2010, 9, 1):
+		print 'Grabbing %s' % (date)
 		
-		page_content = get_article(url)
-		article = parse_article(page_content)
-		article.to_django()
-		print 'Title: %s' % (article.title)
-#		print '%s, by %s \n(%s)\n' % (article.title, article.author, article.subtitle)
-#		print a
+		for url in get_articles('http://www.winchesterstar.com/pages/choose_edition/date:%s' % date):
+			
+			page_content = urllib2.urlopen(url).read()
+			article = parse_article(page_content)
+			article.url = url
+
+			article.slug = '%s-%s' % (date, url.split('/')[-1].replace('_', '-'))
+			try:
+				article.to_django()
+			except:
+				print '%s already exists.' % (article.title)
+
+			print 'Grabbing: %s' % (article.title)
