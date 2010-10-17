@@ -104,7 +104,7 @@ def parse_article(content):
 	return article
 
 
-def date_range(year, month, day):
+def date_range(start_date):
 	"""
 	Returns a generator of all the days between two date objects.
 
@@ -126,7 +126,6 @@ def date_range(year, month, day):
 	# If a datetime object gets passed in,
 	# change it to a date so we can do comparisons.
 	
-	start_date = datetime.datetime(year, month, day)
 	end_date = datetime.datetime.now()
 	
 	if isinstance(start_date, datetime.datetime):
@@ -149,7 +148,9 @@ def date_range(year, month, day):
 
 if __name__ == '__main__':
 
-	for date in date_range(2010, 9, 1):
+	
+
+	for date in date_range(datetime.datetime.now()):
 		print 'Grabbing %s' % (date)
 		
 		for url in get_articles('http://www.winchesterstar.com/pages/choose_edition/date:%s' % date):
