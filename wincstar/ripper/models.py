@@ -11,12 +11,12 @@ CATEGORIES = (
 
 # Create your models here.
 class Article(models.Model):
-	slug = models.CharField('slug', max_length=300, primary_key=True)
-	title = models.CharField('title', max_length=256, unique=True)
-	subtitle = models.CharField('sub-title', null=True, blank=True, max_length=256)
+	slug = models.CharField('slug', max_length=255, primary_key=True)
+	title = models.CharField('title', max_length=255, unique=True)
+	subtitle = models.CharField('sub-title', null=True, blank=True, max_length=255)
 	published = models.DateTimeField('date published')
 	section = models.CharField(max_length=20, choices=CATEGORIES)
-	author = models.CharField('author', max_length=256,  null=True, blank=True)
+	author = models.CharField('author', max_length=255,  null=True, blank=True)
 	content = models.TextField('content')
 	ourl = models.URLField('source URL')
 

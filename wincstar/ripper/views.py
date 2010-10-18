@@ -1,15 +1,20 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response, get_object_or_404
 from django.contrib.syndication.views import Feed
-from collections import OrderedDict
+
+try:
+	from collections import OrderedDict
+except ImportError:
+	from ordereddict import OrderedDict
 
 from ripper.models import Article
 
 
 class LatestArticlesFeed(Feed):
 	title = "Winchester Star Articles"
-	link = "http://salt.kennethreitz.com:8000/"
-	description = "Winchester Star aggregation. Do not use if you are not a paid subscriber."
+	link = "http://www.winchesterstar.com/"
+	description = "Winchester Star Article aggregation. Do not use if you are not a paid subscriber."
+	feed_url="http://74.207.237.53/rss/"
 
 	def items(self):
 		return Article.objects.order_by('-published')[:20]
@@ -24,7 +29,7 @@ class LatestArticlesFeed(Feed):
 		return _content
 
 	def item_link(self, item):
-		return 'http://salt.kennethreitz.com:8000/article/%s/' % (item.slug)
+		return item.ourl
 
 	def item_pubdate(self, item):
 		return item.published

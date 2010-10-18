@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # Example:
     # (r'^wincstar/', include('wincstar.foo.urls')),
 #	(r'^wincstar/', include('wincstar.ripper.urls')),
-	(r'^/', 'ripper.views.index'),
+	(r'^secret/', 'ripper.views.index'),
 	(r'^article/(?P<article_slug>[a-zA-Z0-9_\-]+)/$', 'ripper.views.detail'),
 	(r'^rss/$', LatestArticlesFeed()),
 #	r'^latest/feed/$', LatestEntriesFeed()),
@@ -21,5 +21,5 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
-	(r'^', 'ripper.views.index'),
+	# (r'^', 'ripper.views.index'),
 )
