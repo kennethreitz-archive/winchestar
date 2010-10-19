@@ -17,7 +17,7 @@ class LatestArticlesFeed(Feed):
 	feed_url="http://74.207.237.53/rss/"
 
 	def items(self):
-		return Article.objects.order_by('-published')[:20]
+		return Article.objects.order_by('-published')[:25]
 
 	def item_title(self, item):
 		return item.title

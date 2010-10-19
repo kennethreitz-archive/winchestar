@@ -12,6 +12,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 if os.uname()[1] == 'git.kennethreitz.com':
+	DEBUG = False
 	
 	DATABASES = {
 	    'default': {
