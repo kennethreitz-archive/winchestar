@@ -16,7 +16,7 @@ if os.uname()[1] == 'git.kennethreitz.com':
 	
 	DATABASES = {
 	    'default': {
-	        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+	        'ENGINE': 'django.db.backends.postgresql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 	        'NAME': 'wincstar',                      # Or path to database file if using sqlite3.
 	        'USER': 'root',                      # Not used with sqlite3.
 	        'PASSWORD': 'drummer42',                  # Not used with sqlite3.
