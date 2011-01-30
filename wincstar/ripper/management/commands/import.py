@@ -38,6 +38,7 @@ class Article(object):
 		art = DjangoArticle()
 		art.title = self.title
 		art.subtitle = self.subtitle
+		print self.published
 		art.published = dtime(self.published)
 		art.author = self.author
 		art.content = self.content
@@ -83,7 +84,7 @@ def parse_article(content):
 	art = max(BeautifulSoup(content).findAll('td'), key=len)
 
 	article.title = art.find('h2').text
-	article.published = art.findNext('div').text.split('By')[0].split('2010')[0] + '2010'
+	article.published = art.findNext('div').text.split('By')[0].split('2011')[0] + '2011'
 	_content = max(str(art).split('<hr />'), key=len).lstrip().split('</style>')[-1].lstrip()
 	article.content = BeautifulSoup(_content).prettify()
 
@@ -161,8 +162,9 @@ class Command(BaseCommand):
 				article.slug = '%s-%s' % (date, url.split('/')[-1].replace('_', '-'))
 				try:
 					article.to_django()
-				except:
-					print '%s already exists.' % (article.title)
+				except Exception, why:
+					print why
+					# print '%s already exists.' % (article.title)
 
 				print 'Grabbing: %s' % (article.title)
 		
