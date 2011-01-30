@@ -20,6 +20,7 @@ from wincstar import settings
 from django.core.management.base import BaseCommand, CommandError
 from wincstar.ripper.models import Article as DjangoArticle
 
+YEAR = str(datetime.datetime.now().year)
 
 class Article(object):
 	"""An article."""
@@ -84,7 +85,7 @@ def parse_article(content):
 	art = max(BeautifulSoup(content).findAll('td'), key=len)
 
 	article.title = art.find('h2').text
-	article.published = art.findNext('div').text.split('By')[0].split('2011')[0] + '2011'
+	article.published = art.findNext('div').text.split('By')[0].split(YEAR)[0] + YEAR
 	_content = max(str(art).split('<hr />'), key=len).lstrip().split('</style>')[-1].lstrip()
 	article.content = BeautifulSoup(_content).prettify()
 
@@ -163,8 +164,8 @@ class Command(BaseCommand):
 				try:
 					article.to_django()
 				except Exception, why:
-					print why
-					# print '%s already exists.' % (article.title)
+					# print why
+					print '%s already exists.' % (article.title)
 
 				print 'Grabbing: %s' % (article.title)
 		
