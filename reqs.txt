@@ -1,2 +1,3 @@
 BeaitifulSoup==3.0.8.1
 python-dateutil
+ordereddict
